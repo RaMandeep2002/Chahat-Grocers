@@ -28,10 +28,12 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg sm:text-2xl lg:text-3xl font-medium text-gray-700 leading-snug mb-5">
-            Your One-Point Solution for<br className="hidden sm:inline" /> Daily Essentials
+            Your One-Point Solution for
+            <br className="hidden sm:inline" /> Daily Essentials
           </p>
           <p className="text-base sm:text-lg text-gray-600 mb-10 max-w-xl md:max-w-md mx-auto md:mx-0">
-            Shop quality groceries at the best prices. Ultra-fast delivery to your doorstep, Experience the new way to shop locally!
+            Shop quality groceries at the best prices. Ultra-fast delivery to
+            your doorstep, Experience the new way to shop locally!
           </p>
           <div className="flex flex-col xs:flex-row gap-4 justify-center md:justify-start items-center">
             {/* <a
@@ -52,24 +54,38 @@ export default function Hero() {
         </div>
 
         {/* Right: Card with floating effect */}
+
         <div className="flex-1 flex justify-center">
-          <div className="backdrop-blur-lg bg-white/80 border border-orange-100 rounded-3xl shadow-2xl p-8 min-w-[320px] grid gap-8 grid-cols-2 grid-rows-2 md:w-auto">
-            <div className="flex flex-col items-center">
-              <span className="text-4xl font-extrabold bg-linear-to-r from-pink-500 to-orange-500 bg-clip-text text-transparent mb-1">500+</span>
-              <span className="text-xs font-medium text-gray-600 tracking-wide">Products</span>
+          <div className="grid grid-cols-2 gap-6 rounded-3xl border border-orange-100 bg-white/70 backdrop-blur-xl shadow-xl p-8 min-w-[320px]">
+            {/* Products */}
+            <div className="group flex flex-col items-center justify-center p-6">
+              <span className="text-4xl font-extrabold bg-linear-to-r from-pink-500 to-orange-500 bg-clip-text text-transparent mb-1">
+                500+
+              </span>
+              <span className="text-sm font-medium text-gray-600 tracking-wide">
+                Products
+              </span>
             </div>
-            <div className="flex flex-col items-center">
-              <span className="text-4xl font-extrabold bg-linear-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent mb-1">1000+</span>
-              <span className="text-xs font-medium text-gray-600 tracking-wide">Happy Customers</span>
+
+            {/* Customers */}
+            <div className="group flex flex-col items-center justify-center p-6 ">
+              <span className="text-4xl font-extrabold bg-linear-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent mb-1">
+                1000+
+              </span>
+              <span className="text-sm font-medium text-gray-600 tracking-wide">
+                Happy Customers
+              </span>
             </div>
-            <div className="flex flex-col items-center">
-              <span className="text-4xl font-extrabold bg-linear-to-r from-green-400 to-orange-500 bg-clip-text text-transparent mb-1">Fast</span>
-              <span className="text-xs font-medium text-gray-600 tracking-wide">Delivery</span>
+
+            {/* Delivery */}
+            <div className="col-span-2 group flex flex-col items-center justify-center p-6 ">
+              <span className="text-3xl font-extrabold bg-linear-to-r from-green-400 to-orange-500 bg-clip-text text-transparent mb-1">
+                Fast Delivery
+              </span>
+              {/* <span className="text-sm font-medium text-gray-600 tracking-wide">
+                Across India
+              </span> */}
             </div>
-            {/* <div className="flex flex-col items-center">
-              <span className="text-4xl font-extrabold bg-linear-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent mb-1">24/7</span>
-              <span className="text-xs font-medium text-gray-600 tracking-wide">Availability</span>
-            </div> */}
           </div>
         </div>
       </div>
